@@ -1,0 +1,14 @@
+#landingContainer {
+    background-image: url('/static/images/test2.jpg');
+    width: 100%;
+    background-position: center;
+    height: auto;
+    background-size: cover;
+    background-color: red;
+}
+
+h1 {
+    letter-spacing: 20px;
+    font-size: 7em;
+    color: whitesmoke;
+}
