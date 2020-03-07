@@ -21,8 +21,12 @@
         </button> -->
         <div class="collapse navbar-collapse fixed-top" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="/">Home</a>
-                <a class="nav-item nav-link active" href="/about">About</a>
+                {% if pageName %}
+                    <a class="nav-item nav-link active" href="/">Home</a>
+                {% else %}
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                {% endif %}
+                <a class="nav-item nav-link active" href="#aboutContainer">About</a>
                 <a class="nav-item nav-link active" href="#">Contact</a>
             </div>
         </div>
