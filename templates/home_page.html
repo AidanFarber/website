@@ -1,11 +1,45 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div class="container-fluid border-bottom" id="landingContainer">
+    <div class="container-fluid border-bottom text-center" id="landingContainer">
         <a name='home'></a>
-        <h1 class="text-center" id="mainName">Aidan Farber</h1>
-        <h3 class="text-center" id="shortDesc">Aspiring full-stack developer</h3>
+        <h1 id="mainName">Aidan Farber</h1>
+        <h3 id="shortDesc">Aspiring full-stack developer</h3>
     </div>
-    <div class="container-fluid border-bottom" id="aboutContainer">
+    <div class="container-fluid border-bottom text-center" id="aboutContainer">
         <a name='about'></a>
+        <h1 id="aboutBox">About Me</h1>
+        <div class="container">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab autem perferendis ut sapiente rerum doloribus earum, sequi debitis at nemo laboriosam nulla voluptate. Architecto veniam numquam atque culpa iste dicta!</p>
+        </div>
+        <h3>I value a number of things like...
+            <ul id="valuesList">
+                <li>Living Essentially</li> <!-- Possibly write a blog post about this and link to it via an anchor tag -->
+                <li>Respect</li>
+                <li>Continuous Learning</li>
+                <li>Curiousity</li>
+            </ul>
+        </h3>
+    </div>
+    <div class="container-fluid border-bottom text-center" id="projectsContainer">
+
+
+        <h2>Download a copy of 
+            <a href="{{ url_for('static', filename='sampleResume.txt') }}">my resume</a>
+        </h2>
+    </div>
+    <div class="container-fluid text-center" id="footerContainer">
+        <footer class="footer container-fluid">
+            <ul class="centerLinks">
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/aidan-farber-109667162"><img src="{{ url_for('static', filename='linked_in_icon.png') }}"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.twitter.com/AidanFarber"><img src="{{ url_for('static', filename='twitter_icon.png') }}"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/aidan_farber"><img src="{{ url_for('static', filename='instagram_icon.png') }}"></a>
+                </li>
+            </ul>
+        </footer>
     </div>
 {% endblock content %}

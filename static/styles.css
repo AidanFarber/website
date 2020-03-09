@@ -28,6 +28,33 @@ html {
     padding-bottom: 40px;
 }
 
+#aboutBox {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+#valuesList > li {
+    padding-top: 10px;
+    text-align: center;
+    list-style: inside;
+    transform: translateX(-2.4rem);
+}
+
+#aboutContainer > h3 {
+    color: rgb(179, 178, 178);
+}
+
+.footer {
+    background-color: rgb(29, 29, 29);
+    padding-top: 5rem;
+}
+
+p {
+    color: rgb(179, 178, 178);
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
 h1 {
     position: relative;
     padding-top: 45vh;
