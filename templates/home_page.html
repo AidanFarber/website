@@ -21,7 +21,19 @@
         </h3>
     </div>
     <div class="container-fluid border-bottom text-center" id="projectsContainer">
-
+        <table class="table center">
+            <colgroup span="4" class="projectTable"></colgroup>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Language Used</th>
+            </tr>
+            <tr>
+                <td>Personal Website</td>
+                <td>This site was coded entirely by myself using Flask</td>
+                <td>Python, CSS, and HTML</td>
+            </tr>
+        </table>
 
         <h2>Download a copy of 
             <a href="{{ url_for('static', filename='sampleResume.txt') }}">my resume</a>
@@ -31,13 +43,13 @@
         <footer class="footer container-fluid">
             <ul class="centerLinks">
                 <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/aidan-farber-109667162"><img src="{{ url_for('static', filename='linked_in_icon.png') }}"></a>
+                    <a href="https://www.linkedin.com/in/aidan-farber-109667162"><img src="{{ url_for('static', filename='images/linked_in_icon.png') }}"></a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://www.twitter.com/AidanFarber"><img src="{{ url_for('static', filename='twitter_icon.png') }}"></a>
+                    <a href="https://www.twitter.com/AidanFarber"><img src="{{ url_for('static', filename='images/twitter_icon.png') }}"></a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://www.instagram.com/aidan_farber"><img src="{{ url_for('static', filename='instagram_icon.png') }}"></a>
+                    <a href="https://www.instagram.com/aidan_farber"><img src="{{ url_for('static', filename='images/instagram_icon.png') }}"></a>
                 </li>
             </ul>
         </footer>

@@ -15,6 +15,15 @@ html {
     background-size: cover;
 }
 
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+table td {
+    border-top: 1px solid #333333;
+    padding: .7rem;
+}
+
 #landingContainer {
     /*background-image: url('/static/images/test2.jpg');*/
     
