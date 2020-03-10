@@ -5,7 +5,7 @@
         <h1 id="mainName">Aidan Farber</h1>
         <h3 id="shortDesc">Aspiring full-stack developer</h3>
     </div>
-    <div class="container-fluid border-bottom text-center" id="aboutContainer">
+    <div class="container-fluid border-bottom text-center" id="about">
         <a name='about'></a>
         <h1 id="aboutBox">About Me</h1>
         <div class="container">
@@ -20,27 +20,43 @@
             </ul>
         </h3>
     </div>
-    <div class="container-fluid border-bottom text-center" id="projectsContainer">
-        <table class="table center">
-            <colgroup span="4" class="projectTable"></colgroup>
-            <tr>
-                <th>Project Name</th>
-                <th>Description</th>
-                <th>Language Used</th>
-            </tr>
-            <tr>
-                <td>Personal Website</td>
-                <td>This site was coded entirely by myself using Flask</td>
-                <td>Python, CSS, and HTML</td>
-            </tr>
-        </table>
+    <div class="container-fluid border-bottom text-left" id="projects">
+        <div class="container">
+            <table class="table center">
+                <!-- <colgroup span="4" class="projectTable"></colgroup> -->
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Language Used</th>
+                </tr>
+                <tr>
+                    <td>Personal Website</td>
+                    <td>This site was coded entirely by myself using Flask</td>
+                    <td>Python, CSS, and HTML</td>
+                </tr>
+                <tr>
+                    <td>Product Webscrapper</td>
+                    <td>I built a small app using Beautiful Soup 4 to find the best deals on any linked product</td>
+                    <td>Python</td>
+                </tr>
+            </table>
 
-        <h2>Download a copy of 
-            <a href="{{ url_for('static', filename='sampleResume.txt') }}">my resume</a>
-        </h2>
+            <h4>Things I'll be learning in the future:</h4>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Automating my file systems</li>
+                <li>Working with backend</li>
+                <li>Webscrapper application that tracks stocks over time</li>
+            </ul>
+
+            <h2>Download a copy of 
+                <a href="{{ url_for('static', filename='sampleResume.txt') }}">my resume</a>
+            </h2>
+        </div>
     </div>
-    <div class="container-fluid text-center" id="footerContainer">
+    <div class="container-fluid text-center" id="footer">
         <footer class="footer container-fluid">
+            <h1>Social Media Links</h1>
             <ul class="centerLinks">
                 <li class="list-inline-item">
                     <a href="https://www.linkedin.com/in/aidan-farber-109667162"><img src="{{ url_for('static', filename='images/linked_in_icon.png') }}"></a>
