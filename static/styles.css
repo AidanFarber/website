@@ -9,11 +9,12 @@ html {
     background-color: white;
 }
 
-.nav-item {
+.nav-link {
     top: 0px;
     left: 0px;
     font-size: 2.1rem;
     color: black;
+    padding-left: 2rem !important;
 }
 
 .container-fluid {
@@ -112,6 +113,9 @@ table th {
 
 .footer ul {
     transform: translateX(-2rem);
+}
+.footer li {
+    padding-right: 20px;
 }
 
 p {
