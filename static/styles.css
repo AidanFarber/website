@@ -60,6 +60,7 @@ table th {
     height: auto;
     padding-top: 40px;
     padding-bottom: 5rem;
+    color: rgb(167, 167, 167);
 }
 
 #about h1 {
@@ -154,4 +155,37 @@ h3 {
 body {
     font-family: 'Spartan', sans-serif;
     font-weight: 300;
+}
+
+#postHeader {
+    text-align: center;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+#postsContainer {
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    position: sticky;
+}
+
+#post {
+    position: relative;
+    top: 4rem;
+    border: 1px solid rgb(167, 167, 167);
+    width: 50rem;
+    text-indent: 3.5rem;
+}
+
+
+#postContent {
+    color: rgb(29, 29, 29);
+    font-weight: 400;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+#blog {
+    background-color: rgb(66, 66, 66);
 }
