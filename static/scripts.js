@@ -1,11 +1,7 @@
-function scrollWithNav() { 
-    var element = document.getElementById('targetElement');
-    var headerOffset = 90;
-    var elementPosition = element.getBoundingClientRect().top;
-    var offsetPosition = elementPosition - headerOffset;
-    
-    window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-    });
-}
+$(".nav-link").click(function() {
+    // e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top - 90
+    }, 20);
+});

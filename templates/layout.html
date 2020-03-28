@@ -7,16 +7,18 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if pageName %}+
+    {% if pageName %}
         <title>Aidan Farber - {{ pageName }}</title>
     {% else %}
         <title>Aidan Farber</title>
     {% endif %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     {% if pageName %}
     <nav class="navbar navbar-expand-lg sticky-top navbar-light" id="mainNav">
-        <a class="navbar-brand sticky-top" href="/#">Home</a>
+        <a class="navbar-brand sticky-top" href="/#home">Home</a>
         <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,7 +40,7 @@
     </nav>
     {% else %}
     <nav class="navbar navbar-expand-lg sticky-top navbar-light" id="mainNav">
-        <a class="navbar-brand sticky-top" href="#">Home</a>
+        <a class="navbar-brand sticky-top" href="#home">Home</a>
         <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -46,7 +48,7 @@
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/#about">About</a>
+                    <a class="nav-link" href="#about">About</a>
                     <!-- <a class="nav-link" onclick="scrollWithNav()">About</a> -->
                 </li>
                 <li class="nav-item active">
@@ -60,25 +62,11 @@
     </nav>
     {% endif %}
 
-
-    <!-- <nav class="global-nav navbar-expand-lg navbar-light bg-light" id="mainNav">
-        <a class="navbar-brand fixed-top" href="#">Home</a>
-        <button class="navbar-toggler fixed-top" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse fixed-top" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#about">About</a>
-                <a class="nav-item nav-link active" href="#projects">Projects</a>
-            </div>
-        </div>
-    </nav> -->
-
     {% block content %}{% endblock content %}
 
-    <!-- <script src="{{ url_for('static', filename='scripts.js') }}"></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>
