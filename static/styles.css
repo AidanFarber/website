@@ -44,6 +44,7 @@ table th {
 }
 
 #landingContainer {
+    position: relative;
     background-image: url('/static/images/Aidan.jpg');
     
     /*background-color: red;*/
@@ -175,6 +176,20 @@ body {
     padding-bottom: 10rem;
     position: sticky;
     width: 70rem;
+}
+
+#blogDesc {
+    position: relative;
+    top: 1.3rem;
+    /* border-bottom: 1px solid rgb(66, 66, 66); */
+}
+
+hr {
+    position: relative;
+    top: 2rem;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 #post {
