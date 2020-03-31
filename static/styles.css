@@ -44,7 +44,7 @@ table th {
 }
 
 #landingContainer {
-    /*background-image: url('/static/images/test2.jpg');*/
+    background-image: url('/static/images/Aidan.jpg');
     
     /*background-color: red;*/
 }
@@ -148,7 +148,12 @@ h3 {
     align-self: center;
 }
 
+#mainName {
+    font-size: 3.5rem;
+}
+
 #shortDesc {
+    font-size: 2.1rem;
     padding-right: 10px;
 }
 
@@ -166,15 +171,20 @@ body {
 #postsContainer {
     position: absolute;
     background-color: white;
-    height: 100vh;
+    height: relative;
+    padding-bottom: 10rem;
     position: sticky;
+    width: 70rem;
 }
 
 #post {
     position: relative;
+    bottom: 4rem;
     top: 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     border: 1px solid rgb(167, 167, 167);
-    width: 50rem;
+    width: auto;
     text-indent: 3.5rem;
 }
 

@@ -7,7 +7,7 @@ def home():
     return render_template("home_page.html")
 
 @app.route('/blog')
-def about():
+def blog():
     return render_template('blog.html', pageName='blog')
 
 if __name__ == '__main__':
