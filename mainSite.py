@@ -10,5 +10,9 @@ def home():
 def blog():
     return render_template('blog.html', pageName='blog')
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html', pageName='contact')
+
 if __name__ == '__main__':
     app.run(debug=True)
